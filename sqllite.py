@@ -16,11 +16,13 @@ SECTION VARCHAR(25),MARKS INT);
 cursor.execute(table_info)
 
 # insert records
-cursor.execute('''Insert Into STUDENT values('Charan','ML','A',90)''')
+cursor.execute('''Insert Into STUDENT values('Charan','GenAI','A',90)''')
 cursor.execute('''Insert Into STUDENT values('Sushanth','Web dev','B',100)''')
 cursor.execute('''Insert Into STUDENT values('Veekshith','Data Science','A',86)''')
-cursor.execute('''Insert Into STUDENT values('Dheeraj','DEVOPS','A',50)''')
-cursor.execute('''Insert Into STUDENT values('Rathan','DEVOPS','A',35)''')
+cursor.execute('''Insert Into STUDENT values('Dheeraj','Content Creation','A',89)''')
+cursor.execute('''Insert Into STUDENT values('Rathan','Data Science','A',65)''')
+cursor.execute('''Insert Into STUDENT values('Deekshith','Automation Testing','B',55)''')
+cursor.execute('''Insert Into STUDENT values('Tyson','Web dev','B',50)''')
 
 # query to cisplay all the records
 data = cursor.execute("SELECT * FROM STUDENT")

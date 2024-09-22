@@ -1,13 +1,13 @@
 from dotenv import load_dotenv
-load_dotenv() ## load all the environemnt variables
+load_dotenv() # load all the environemnt variables
 
 import streamlit as st
 import os
 import sqlite3
 
 import google.generativeai as genai
-## Configure Genai Key
 
+# Configure Genai Key
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 # function to load Google Gemini Model and provide queries as response
@@ -43,8 +43,7 @@ prompt=[
     """
 ]
 
-## Streamlit App
-
+# Streamlit App
 st.set_page_config(page_title="I can Retrieve Any SQL query 🤖📝")
 st.header("ChatBot App To Retrieve SQL Data")
 
